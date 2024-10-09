@@ -36,9 +36,9 @@ void setupKeymap() {
    // once tested, you can flash the left and right to their respective halves.
 
   // Code below makes sure that the encoder gets configured.  
-  RotaryEncoder.begin(ENCODER_PAD_A, ENCODER_PAD_B);    // Initialize Encoder
-  RotaryEncoder.setCallback(encoder_callback);    // Set callback
-  RotaryEncoder.start();    // Start encoder
+//   RotaryEncoder.begin(ENCODER_PAD_A, ENCODER_PAD_B);    // Initialize Encoder
+//   RotaryEncoder.setCallback(encoder_callback);    // Set callback
+//   RotaryEncoder.start();    // Start encoder
 }
 
 void encoder_callback(int step)
@@ -132,9 +132,9 @@ ADDLAYER(_ADJUST, Method::PRESS, adjust);
 
 // Code below makes sure that the encoder gets configured.
 
-  RotaryEncoder.begin(ENCODER_PAD_A, ENCODER_PAD_B);    // Initialize Encoder
-  RotaryEncoder.setCallback(encoder_callback);    // Set callback
-  RotaryEncoder.start();    // Start encoder
+//   RotaryEncoder.begin(ENCODER_PAD_A, ENCODER_PAD_B);    // Initialize Encoder
+//   RotaryEncoder.setCallback(encoder_callback);    // Set callback
+//   RotaryEncoder.start();    // Start encoder
 
 
     #ifdef BLUEMICRO_CONFIGURED_DISPLAY
@@ -218,9 +218,9 @@ ADDLAYER(_RAISE, Method ::PRESS , raise);
 ADDLAYER(_ADJUST, Method::PRESS, adjust);
 // Code below makes sure that the encoder gets configured.
 
-  RotaryEncoder.begin(ENCODER_PAD_A, ENCODER_PAD_B);    // Initialize Encoder
-  RotaryEncoder.setCallback(encoder_callback);    // Set callback
-  RotaryEncoder.start();    // Start encoder
+//   RotaryEncoder.begin(ENCODER_PAD_A, ENCODER_PAD_B);    // Initialize Encoder
+//   RotaryEncoder.setCallback(encoder_callback);    // Set callback
+//   RotaryEncoder.start();    // Start encoder
 }
 
 
