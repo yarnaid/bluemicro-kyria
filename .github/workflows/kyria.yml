@@ -3,6 +3,11 @@
 # rename the name below so that you can see the different keyboards in your github actions
 name: kyria-default
 
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
 # You will need to manually trigger this workflow
 on: [pull_request, push, 'workflow_dispatch']
 
