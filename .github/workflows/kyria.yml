@@ -4,7 +4,7 @@
 name: BlueHand-4x2
 
 # You will need to manually trigger this workflow
-on:  ['workflow_dispatch']
+on: [pull_request, push, 'workflow_dispatch']
 
 jobs:
   initialize-firmware:

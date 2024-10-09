@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         sketch: ['erase_flash']
-        fqbn: ['kyria']
+        fqbn: ['pca10056']
 
     runs-on: ubuntu-latest
     
