@@ -56,7 +56,7 @@ jobs:
           python $HOME/$BSP_PATH/$BSP_VERSION/tools/uf2conv/uf2conv.py ./${{ matrix.sketch }}/build/${{ matrix.sketch }}.ino.hex -c -f 0xADA52840 -o ./${{ matrix.sketch }}/build/${{ matrix.sketch }}.ino.uf2
           ls -lR ./${{ matrix.sketch }}/build/
       - name: Archive artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: |
