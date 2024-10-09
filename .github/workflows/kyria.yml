@@ -7,6 +7,7 @@ permissions:
   pull-requests: write
   issues: write
   repository-projects: write
+  contents: write
 
 # You will need to manually trigger this workflow
 on: [pull_request, push, 'workflow_dispatch']
@@ -40,7 +41,7 @@ jobs:
       - name: checkout builder repo
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN  }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: update from last run
         run: git pull
       - name: setup conditions
